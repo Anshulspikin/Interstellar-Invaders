@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="icon" type="image" href="Interstellar Invaders logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="startScreen" class="screen">
+        <h1>Welcome to Space Invaders</h1>
+        <button id="startBtn">Start Game</button>
+        <button id="helpBtn">Help</button>
+    </div>
+    <div id="helpScreen" class="screen">
+        <h2>Game Rules</h2>
+        <ul>
+            <li>Use the left/right arrow keys or mouse to move the spaceship.</li>
+            <li>Click or press Space to shoot bullets.</li>
+            <li>Destroy invaders without collisions</li>
+        </ul>
+        <button id="closeHelpBtn">Close Help</button>
+    </div>
+
+    <div id="pauseScreen" class="screen">
+        <h2>Game Paused</h2>
+        <button id="resumeBtn">Resume</button>
+        <button id="newGameBtn">New Game</button>
+    </div>
+
+    <div id="gameArea">
+        <video id="backgroundVideo" autoplay muted loop>
+            <source src="meteor_shower.mp4" type="video/mp4">
+        </video>
+
+        <div id="score">Score: 0</div>
+        <div id="player"></div>
+        <div id="bulletsContainer"></div> 
+        <div id="invadersContainer"></div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
